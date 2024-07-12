@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Storybook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="storybook">
+        <div class="page" id="page1">
+            <div class="content">
+                <h1>Once upon a time...</h1>
+                <p>There was a magical forest.</p>
+                <button class="nav-btn next-btn" data-target="page2">Next</button>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div class="content">
+                <h1>A curious fox...</h1>
+                <p>Decided to explore beyond the trees.</p>
+                <button class="nav-btn prev-btn" data-target="page1">Previous</button>
+                <button class="nav-btn next-btn" data-target="page3">Next</button>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="content">
+                <h1>And discovered...</h1>
+                <p>A hidden treasure chest!</p>
+                <button class="nav-btn prev-btn" data-target="page2">Previous</button>
+                <button class="nav-btn next-btn" data-target="page1">Start Over</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
